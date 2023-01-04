@@ -1,9 +1,10 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 
 app = Flask(__name__)
 
 @app.route('/')
 def index():
+    username = request.cookies.get('username')
     return 'Hello World!'
 
 @app.route('/hello/')
