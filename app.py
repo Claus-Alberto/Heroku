@@ -4,7 +4,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    username = request.cookies.get('username')
     return render_template('index.html')
 
 @app.route('/hello/')
