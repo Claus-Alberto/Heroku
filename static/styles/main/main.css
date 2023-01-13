@@ -1,3 +1,46 @@
 @import url("header.css");
 @import url("banner.css");
 @import url("services.css");
+
+section.partners {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--gray);
+    padding: 40px 0;
+    gap: 40px;
+}
+
+section.partners h2 {
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+section.partners div.marquee {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    gap: 100px;
+    animation: marquee 20s linear infinite;
+    /* white-space: nowrap; */
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+  to { 
+    transform: translateX(-100%);
+  }
+}
+
+section.partners div.marquee img{
+    height: 100px;
+    max-height: 100px;
+    min-height: 100px;
+}
