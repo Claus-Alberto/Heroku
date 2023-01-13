@@ -1,0 +1,52 @@
+section.main {
+    position: relative;
+    height: calc(100vh - var(--header-height));
+    background-image: url("/static/images/background.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main .opacity-div{
+    background-color: rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.main .opacity-div .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+}
+
+section.main .opacity-div .container q {
+    font-family: 'Sawarabi Mincho', serif;
+    color: var(--white);
+    font-size: 1.5rem;
+    max-width: 65%;
+    text-align: center;
+    line-height: 2.2rem;
+}
+
+section.main .opacity-div .container a {
+    font-family: 'Signika Negative', sans-serif;
+    padding: 30px 60px;
+    border-radius: 100px;
+    border: var(--white) solid 2px;
+    color: var(--white);
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 0;
+    background-color: rgba(0, 0, 0, 0.15);
+}

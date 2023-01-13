@@ -1,0 +1,77 @@
+section.services {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.services .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 40px;
+    padding: 40px 0;
+}
+
+section.services .container h2 {
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+section.services .container .carroussel {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+section.services .container .carroussel .products {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+}
+
+section.services .container .carroussel .products .product {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+section.services .container .carroussel .products .product img {
+    width: 200px;
+}
+
+section.services .container .carroussel .products .product h3 {
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: capitalize;
+    font-size: 1.3rem;
+    color: var(--blue);
+    font-weight: bold;
+}
+
+section.services .container .carroussel .products .product p {
+    font-family: 'Sawarabi Mincho', serif;
+    font-size: 1rem;
+    color: var(--black);
+    max-width: 175px;
+    line-height: 1.5rem;
+}
+
+section.services .container a {
+    font-family: 'Signika Negative', sans-serif;
+    padding: 30px 60px;
+    border-radius: 100px;
+    border: var(--blue) solid 2px;
+    color: var(--blue);
+    text-decoration: none;
+    font-size: 1.5rem;
+    line-height: 0;
+    font-weight: bold;
+}

@@ -1,0 +1,38 @@
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--blue);
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
+    width: 100%;
+    height: var(--header-height);
+}
+
+header .container {
+    padding: 11px 0;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 87px;
+}
+
+header .container a {
+    color: var(--white);
+    text-decoration: none;
+    transition: text-decoration 1s;
+    text-transform: uppercase;
+    font-family: 'Signika Negative', sans-serif;
+    font-size: 1.3rem;
+}
+
+header .container a:hover {
+    text-decoration: underline;
+}
+
+header .container a img {
+    height: 60px;
+}

@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Signika Negative";
+    src: url("../fonts/signika_negative.woff") format("woff"),
+    url("../fonts/signika_negative.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Sawarabi Mincho";
+    src: url("../fonts/sawarabi_mincho.woff") format("woff"),
+    url("../fonts/sawarabi_mincho.woff2") format("woff2");
+}
+
+.container {
+    max-width: 1405px;
+    width: 100%;
+}
+
+h1 {
+    font-family: 'Signika Negative', sans-serif;
+    text-transform: uppercase;
+    color: var(--white);
+    text-align: center;
+    font-size: 4.6rem;
+    font-weight: bold;
+    line-height: 5.5rem;
+}
