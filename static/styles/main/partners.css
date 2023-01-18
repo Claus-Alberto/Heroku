@@ -6,6 +6,7 @@ section.partners {
     background-color: var(--gray);
     padding: 40px 0;
     gap: 40px;
+    overflow-x: hidden;
 }
 
 section.partners h2 {
