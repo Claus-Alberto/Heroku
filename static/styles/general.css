@@ -15,8 +15,12 @@
     width: 100%;
 }
 
+body {
+    overflow-x: hidden;
+}
+
 h1 {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: var(--font1);
     text-transform: uppercase;
     color: var(--white);
     text-align: center;
@@ -26,7 +30,7 @@ h1 {
 }
 
 h2 {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: var(--font1);
     text-transform: uppercase;
     font-size: 2rem;
     font-weight: bold;

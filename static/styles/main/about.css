@@ -39,7 +39,7 @@ section.about {
   }
   
   section.about .container .content div ul {
-    font-family: 'Sawarabi Mincho', serif;
+    font-family: var(--font2);
     font-size: 1.3rem;
     max-width: 580px;
     line-height: 2rem;
@@ -49,7 +49,7 @@ section.about {
   }
   
   section.about .container .content div a {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: var(--font1);
     padding: 30px 60px;
     border-radius: 100px;
     border: var(--white) solid 2px;
@@ -57,4 +57,11 @@ section.about {
     text-decoration: none;
     font-size: 1.5rem;
     line-height: 0;
+    transition: background-color 1s;
+    transition: color 1s;
+  }
+  
+  section.about .container .content div a:hover {
+    color: var(--blue);
+    background-color: var(--white);
   }

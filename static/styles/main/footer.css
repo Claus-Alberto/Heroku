@@ -1,0 +1,58 @@
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+footer .content {
+    width: 100%;
+    background-color: var(--blue);
+    display: flex;
+    color: var(--white);
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    position: relative;
+    gap: 400px;
+}
+
+footer .content::after {
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 100%;
+    background-image: url("/static/images/wave.svg");
+    top: -40px;
+    left: 0;
+}
+
+footer .content div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 500px;
+    gap: 20px;
+}
+
+footer .content div p {
+    font-family: var(--font2);
+    font-size: 1.3rem;
+    text-align: center;
+}
+
+footer .content img {
+    height: 200px;
+}
+
+footer .copy {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--blue);
+    font-family: var(--font2);
+    text-align: center;
+    width: 100%;
+    padding: 20px;
+}

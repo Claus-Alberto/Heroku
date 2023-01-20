@@ -10,7 +10,7 @@ section.partners {
 }
 
 section.partners h2 {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: var(--font1);
     text-transform: uppercase;
     font-size: 2rem;
     color: var(--blue);
@@ -31,11 +31,8 @@ section.partners div.marquee {
   0% {
     transform: translateX(0);
   }
-  99.9% { 
-    transform: translateX(-100%);
-  }
   100% { 
-    transform: translateX(0);
+    transform: translateX(-4392.86px);
   }
 }
 

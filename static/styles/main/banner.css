@@ -31,7 +31,7 @@ section.main .opacity-div .container{
 }
 
 section.main .opacity-div .container q {
-    font-family: 'Sawarabi Mincho', serif;
+    font-family: var(--font2);
     color: var(--white);
     font-size: 1.5rem;
     max-width: 65%;
@@ -40,7 +40,7 @@ section.main .opacity-div .container q {
 }
 
 section.main .opacity-div .container a {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: var(--font1);
     padding: 30px 60px;
     border-radius: 100px;
     border: var(--white) solid 2px;
@@ -49,4 +49,12 @@ section.main .opacity-div .container a {
     font-size: 1.5rem;
     line-height: 0;
     background-color: rgba(0, 0, 0, 0.15);
+    transition: color 1s;
+    transition: background-color 1s;
+}
+
+section.main .opacity-div .container a:hover {
+    cursor: pointer;
+    background-color: var(--white);
+    color: var(--blue);
 }

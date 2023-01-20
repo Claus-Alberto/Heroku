@@ -45,7 +45,7 @@ section.services .container .carroussel .products .product img {
 }
 
 section.services .container .carroussel .products .product h3 {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: var(--font1);
     text-transform: capitalize;
     font-size: 1.3rem;
     color: var(--blue);
@@ -53,7 +53,7 @@ section.services .container .carroussel .products .product h3 {
 }
 
 section.services .container .carroussel .products .product p {
-    font-family: 'Sawarabi Mincho', serif;
+    font-family: var(--font2);
     font-size: 1rem;
     color: var(--black);
     max-width: 175px;
@@ -61,7 +61,7 @@ section.services .container .carroussel .products .product p {
 }
 
 section.services .container a {
-    font-family: 'Signika Negative', sans-serif;
+    font-family: var(--font1);
     padding: 30px 60px;
     border-radius: 100px;
     border: var(--blue) solid 2px;
@@ -70,4 +70,11 @@ section.services .container a {
     font-size: 1.5rem;
     line-height: 0;
     font-weight: bold;
+    transition: background-color 1s;
+    transition: color 1s;
+}
+
+section.services .container a:hover {
+    background-color: var(--blue);
+    color: var(--white);
 }

@@ -1,0 +1,79 @@
+section.budget {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("/static/images/bubble_background.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+section.budget .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 40px;
+}
+
+section.budget .container form {
+    background-color: var(--white);
+    border-radius: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 50px 100px;
+    box-shadow: 0px 0px 50px var(--dark_gray);
+    gap: 20px;
+}
+
+section.budget .container form img {
+    width: 125px;
+}
+
+section.budget .container form h2 {
+    font-size: 1.3rem;
+    color: var(--dark_gray);
+}
+
+section.budget .container form input {
+    all: unset;
+    border-radius: 100px;
+    padding: 10px 25px;
+    border: 2px var(--blue) solid;
+    color: var(--blue);
+    font-family: var(--font1);
+}
+
+section.budget .container form>input {
+    width: 510px;
+}
+
+section.budget .container form>input[type="submit"] {
+    background-color: var(--blue);
+    color: var(--white);
+    text-align: center;
+    cursor: pointer;
+}
+
+section.budget .container form>input[type="submit"]:hover {
+    background-color: var(--white);
+    color: var(--blue);
+    transition: color 1s;
+    transition: background-color 1s;
+}
+
+section.budget .container form div {
+    width: 564px;
+    display: flex;
+    justify-content: space-between;
+}
+
+section.budget .container form div input {
+    width: 38%;
+}
