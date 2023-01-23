@@ -286,7 +286,7 @@
     document.querySelector('#next').addEventListener('click', event => {
         const elem = document.querySelector('#products')
         console.log(Math.ceil(elem.scrollLeft))
-        if(Math.ceil(elem.scrollLeft) < 1500) {
+        if(Math.ceil(elem.scrollLeft) < 900) {
             elem.scrollBy(300, 0)
         }
         else {
