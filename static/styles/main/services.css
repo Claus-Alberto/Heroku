@@ -24,11 +24,29 @@ section.services .container .carroussel {
     gap: 100px;
 }
 
+section.services .container .carroussel button{
+    cursor: pointer;
+}
+
+section.services .container .carroussel .products-wrapper {
+    width: 800px;
+}
+
 section.services .container .carroussel .products {
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 100px;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+    scroll-behavior: smooth;
+    overscroll-behavior: contain;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+section.services .container .carroussel .products::-webkit-scrollbar {
+    display: none;
 }
 
 section.services .container .carroussel .products .product {
@@ -38,6 +56,9 @@ section.services .container .carroussel .products .product {
     align-items: center;
     text-align: center;
     gap: 20px;
+    flex: none;
+    scroll-snap-align: start;
+    pointer-events: none;
 }
 
 section.services .container .carroussel .products .product img {

@@ -1,5 +1,6 @@
 :root {
     --header-height: 87px;
+    --negative-header-height: -87px;
     --white: #FFFFFF;
     --blue: #0067a0;
     --light_blue: #0092e3;

@@ -10,9 +10,25 @@
     url("../fonts/sawarabi_mincho.woff2") format("woff2");
 }
 
+section {
+    position: relative;
+}
+
+section div.space{
+    position: absolute;
+    height: var(--header-height);
+    width: 100%;
+    z-index: -1;
+    top: var(--negative-header-height);
+}
+
 .container {
     max-width: 1405px;
     width: 100%;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
